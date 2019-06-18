@@ -2,36 +2,28 @@
 
 @section('content')
     <div class="container">
+
         <div class="row">
-           <div class="col-md-12 mx-auto">
-              <video src="{{ asset('movies/nsh-miyagi201810.mp4')}}" muted loop autoplay></video>
-           </div>
+            <div class="wrapper">
+                <img src="{{ asset('img/zabueri_example.jpg')}}" class="img-fluid">
+                <video src="{{ asset('movies/nsh-miyagi201810.mp4')}}" muted autoplay class="img-fluid"></video>
+            </div>
         </div>
-        <hr color="#c0c0c0">
-        @if (!is_null($headline))
+
+        <br>
+        <div class="about">
+            <h2>ニュースタイルハッスルとは</h2>
             <div class="row">
-                <div class="headline col-md-10 mx-auto">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="caption mx-auto">
-                                <div class="image">
-                                    @if ($headline->image_path)
-                                        <img src="{{ asset('storage/image/' . $headline->image_path) }}">
-                                    @endif
-                                </div>
-                                <div class="title p-2">
-                                    <h1>{{ str_limit($headline->title, 70) }}</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="body mx-auto">{{ str_limit($headline->body, 650) }}</p>
-                        </div>
-                    </div>
+                <div class="text col-md-6">
+                    <p>世界中で踊られている最新のペアダンス、それがニュースタイルハッスル。<br>自由な発想で、自分たちの好きな音楽をパートナーと表現します。<br><br>1970年代に誕生したディスコダンス「ハッスル」を元に、2009年ごろにニューヨークでジェフ・セルビーらダンサーたちによって考案されました。<br><br>DREAMS COME TRUEのライブや嵐の楽曲（「未完」）PV、NHKの番組「Eダンスアカデミー」などでも踊られ、エンターテイメントの世界でも活躍しています。</p>
+                </div>
+                <div class="image col-md-6">
+                    <img src="{{ asset('img/zabueri_example.jpg')}}" class="img-fluid">
                 </div>
             </div>
-        @endif
-        <hr color="#c0c0c0">
+        </div>
+
+
         <div class="row">
             <div class="posts col-md-8 mx-auto mt-3">
                 @foreach($posts as $post)
