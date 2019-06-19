@@ -56,6 +56,88 @@ body {
   }
 }
 
-.wrapper{
+.top-image {
+  position: relative;
+  width: 100%;
+  background-color: #000000;
+  }
 
+#top-movie{
+  width: 100%;
+  display: block;
+  opacity: 0.7;
 }
+
+#top-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;/*余計な隙間を除く*/
+  padding:0;/*余計な隙間を除く*/
+  }
+
+.top{
+  margin-bottom:80px;
+}
+
+.about{
+  margin-bottom:80px;
+}
+
+.section1{
+  margin-bottom:80px;
+}
+
+h2 {
+  margin-bottom:30px
+}
+
+
+
+.hmap{position:relative;width:930px;margin:-200px auto 0;padding:35px;background-color:#fff;background-color:rgba(255,255,255,.5);text-align:center;font-size:80%}
+.hmap:after{clear:both;display:block;content:" "}
+.hmap div{float:right;width:186px}
+.hmap_l2{padding-top:230px}
+.hmap_l3{padding-top:300px}
+.hmap_l4{padding-top:310px}
+.hmap_l5{padding-top:330px}
+.hmap ul{float:right;width:186px;margin:0;padding:0}
+.hmap ul.chugoku,div.hmap ul.hokkaido,div.hmap ul.kyushu{margin-bottom:10px}
+.hmap li{display:inline}
+.hmap a{display:inline-block;border-right:1px solid #fff;border-bottom:1px solid #fff;padding:15px 2px;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hmap a:link,div.hmap a:visited{color:#fff}
+.hmap a:hover{overflow:visible;text-overflow:clip;opacity:.8;-ms-filter:"alpha(opacity=80)"}
+ul.hokkaido a{background-color:#944c4c}
+ul.tohoku a{background-color:#4c944c}
+ul.kanto a{background-color:#94944c}
+ul.hokushin a{background-color:#4c9494}
+ul.tokai a{background-color:#944c4c}
+ul.kansai a{background-color:#4c944c}
+ul.chugoku a{background-color:#94944c}
+ul.shikoku a{background-color:#4c9494}
+ul.kyushu a{background-color:#944c4c}
+ul.okinawa a{background-color:#4c944c}
+a.pbh,span.pbh{clear:both;width:161px}
+a.pb5,span.pb5{float:left;width:88px}
+a.pb10,span.pb10{clear:both;width:181px}
+a.pb3,span.pb3{float:left;width:57px}
+@media only screen and (max-width:1020px) and (min-width:940px){div.hmap{width:auto;padding:35px 10px 35px 0}}
+@media only screen and (max-width:939px){
+  div.hmap{width:auto;margin:0;padding:5px;text-align:left}
+  div.hmap div{float:none;width:auto}
+  div.hmap_l2,div.hmap_l3,div.hmap_l4,div.hmap_l5{padding-top:0}
+  div.hmap ul{float:none;width:auto;margin:0;padding:0;background-color:#fff;list-style:none}
+  div.hmap ul.chugoku,div.hmap ul.hokkaido,div.hmap ul.kyushu{margin-bottom:0}
+  div.hmap li{display:inline;border-bottom:1px solid #f5f5eb}
+  div.hmap a{display:inline-block;border:none;width:29%;margin:5px 1% 0;padding:10px 1%;text-decoration:underline;white-space:normal;overflow:visible;text-overflow:clip;text-align:center}
+  a.pbh,span.pbh{clear:both;width:auto}
+  a.pb5,span.pb5{float:none;width:auto}
+  a.pb10,span.pb10{clear:both;width:auto}
+  a.pb3,span.pb3{float:none;width:auto}
+}
+.group{position:relative;width:1000px;margin:10px auto;text-align:center;font-size:80%}
+@media only screen and (max-width:1020px) and (min-width:940px){div.group{width:100%}}
+@media only screen and (max-width:939px){div.group{width:100%}}
