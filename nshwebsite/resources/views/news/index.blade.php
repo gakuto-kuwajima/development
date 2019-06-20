@@ -5,7 +5,7 @@
         <div class="top">
             <div class="row">
                 <div class="top-image">
-                    <video src="{{ asset('movies/newstylehustlejapan2017.mp4')}}" muted autoplay class="img-fluid" id="top-movie"></video>
+                    <video src="{{ asset('movies/newstylehustlejapan2017.mp4')}}" muted autoplay loop class="img-fluid" id="top-movie"></video>
                     <img src="{{ asset('img/newstylehustlejapan-white.png')}}" class="img-fluid" id="top-icon">
                 </div>
             </div>
@@ -26,7 +26,7 @@
           <div class="row">
               <div class="image col-md-6">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LUToU1eOHTg"　allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/no4luIlQtoQ"　allowfullscreen></iframe>
                 </div>
               </div>
               <div class="text col-md-6 mx-auto">
@@ -40,6 +40,8 @@
               <div class="text col-md-12">
                   <p>現在日本各地にニュースタイルハッスルのコミュニティが作られています。<br><br>気になる地域があれば、ぜひその地域のコミュニティの様子をのぞいてみてください。</p>
               </div>
+          </div>
+          <div class="row">
               <div class="hmap">
                   <div class="hmap_l1">
                       <ul class="hokkaido">
@@ -122,6 +124,7 @@
                       </ul>
                   </div>
               </div>
+            </div>
           </div>
         </div>
     </div>
