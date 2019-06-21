@@ -15,9 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
-  Route::get('news/create', 'Admin\NewsController@add');
-  Route::post('news/create', 'Admin\NewsController@create');
+Route::group(['middleware' => 'auth'], function(){
+  Route::get('community/create', 'CommunityController@add');
+  Route::post('community/create', 'CommunityController@create');
   Route::get('news', 'Admin\NewsController@index');
   Route::get('profile/create', 'Admin\ProfileController@add');
   Route::post('profile/create', 'Admin\ProfileController@create');
@@ -32,6 +32,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/', 'NewsController@index');
+Route::get('/', 'CommunityController@toppage');
 
 Route::get('/profile', 'NewsController@profile');
