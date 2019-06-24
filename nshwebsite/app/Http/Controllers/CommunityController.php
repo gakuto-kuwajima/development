@@ -66,13 +66,13 @@ class CommunityController extends Controller
         if (empty($community)){
            abort(404);
         }
-        return view('community.edit', ['community_form => $community']);
+        return view('community.edit', ['community_form' => $community]);
     }
 
 
     public function update(Request $request)
     {
-        $this->varidate($requset, Community::$rules);
+        $this->validate($request, Community::$rules);
 
         $community = Community::find($request->id);
 
@@ -81,6 +81,8 @@ class CommunityController extends Controller
           $eyecatchpath = $request->file('eyecatch')->store('public/image');
           $community->eyecatch_path = basename($eyecatchpath);
           unset($community_form['eyecatch']);
+        }elseif (0 == strcmp($request->remove, 'true')){
+          $community->eyecatch_path = null;
         }
 
         if (isset($community_form['message_image'])){

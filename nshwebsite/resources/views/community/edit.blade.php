@@ -1,11 +1,11 @@
 @extends('layouts.admin')
-@section('title', 'ニュースの編集')
+@section('title', 'コミュニティページ編集')
 
 @section('content')
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>ニュース編集</h2>
+                <h2>コミュニティページ編集</h2>
                 <form action="{{ action('CommunityController@update') }}" method="post" enctype="multipart/form-data">
                     @if (count($errors) > 0)
                         <ul>
@@ -26,7 +26,6 @@
                                     <input type="checkbox" class="form-check-input" name="remove" value="true">画像を削除
                                 </label>
                             </div>
-                        </div>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -58,25 +57,25 @@
                     <div class="form-group row">
                         <label class="col-md-2" for="message">メッセージ</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="message" rows="10">{{ community_form->message}}</textarea>
+                            <textarea class="form-control" name="message" rows="10">{{ $community_form->message }}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2" for="facebook_link">facebookページのリンク</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="facebook_link" value="{{ community_form->facebook_link }}">
+                            <input type="text" class="form-control" name="facebook_link" value="{{ $community_form->facebook_link }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2" for="contact">お問い合わせ先</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="contact" value="{{ community_form->contact }}">
+                            <input type="text" class="form-control" name="contact" value="{{ $community_form->contact }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2" for="video_link">動画のリンク</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="video_link" value="{{ community_form->video_link }}">
+                            <input type="text" class="form-control" name="video_link" value="{{ $community_form->video_link }}">
                         </div>
                     </div>
                     <div class="form-group row">
