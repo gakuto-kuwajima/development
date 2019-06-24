@@ -94,7 +94,7 @@ return [
     'numeric' => 'The :attribute must be a number.',
     'present' => 'The :attribute field must be present.',
     'regex' => 'The :attribute format is invalid.',
-    'required' => ':attributeに入力が必要です。',
+    'required' => ':attributeの入力が必要です。',
     'required_if' => 'The :attribute field is required when :other is :value.',
     'required_unless' => 'The :attribute field is required unless :other is in :values.',
     'required_with' => 'The :attribute field is required when :values is present.',
@@ -145,12 +145,9 @@ return [
     */
 
     'attributes' => [
-        'title' => 'タイトル',
-        'body' => '本文',
-        'name' => '名前',
-        'gender' => '性別',
-        'hobby' => '趣味',
-        'introduction' => '自己紹介欄'
+        'eyecatch' => 'アイキャッチ画像',
+        'name' => 'コミュニティ名',
+        'facebook_link' => 'Facebookのリンク',
     ],
 
 ];

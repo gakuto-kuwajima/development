@@ -36,7 +36,7 @@
                     <div class="form-group row">
                         <label class="col-md-2" for="information">活動情報</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="inforimation" rows="10">{{ old('body')}}</textarea>
+                            <textarea class="form-control" name="information" rows="10">{{ old('body')}}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -46,9 +46,9 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="information">メッセージ</label>
+                        <label class="col-md-2" for="message">メッセージ</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="inforimation" rows="10">{{ old('body')}}</textarea>
+                            <textarea class="form-control" name="message" rows="10">{{ old('body')}}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">

@@ -6,23 +6,9 @@
         <div class="row">
             <h2>ニュース一覧</h2>
         </div>
-        <div class="row">
+        <div class="row py-4">
             <div class="col-md-4">
-                <a href="{{ action('Admin\NewsController@add') }}" role="button" class="btn btn-primary">新規作成</a>
-            </div>
-            <div class="col-md-8">
-                <form action="{{ action('Admin\NewsController@index') }}" method="get">
-                    <div class="form-group row">
-                        <label class="col-md-2">タイトル</label>
-                        <div class="col-md-8">
-                            <input type="text" class="form-control" name="cond_title" value= {{$cond_title }} >
-                        </div>
-                        <div class="col-md-2">
-                            {{ csrf_field() }}
-                            <input type="submit" class="btn btn-primary" value="検索">
-                        </div>
-                    </div>
-                </form>
+                <a href="{{ action('CommunityController@add') }}" role="button" class="btn btn-primary">新規作成</a>
             </div>
         </div>
         <div class="row">
@@ -32,23 +18,21 @@
                         <thead>
                             <tr>
                                 <th width="10%">ID</th>
-                                <th width="20%">タイトル</th>
-　　　　　　　　　　　　　　　　　 <th width="50%">本文</th>
-                                <th width="10%">操作</th>
+                                <th width="60%">名前</th>
+                                <th width="20%">操作</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($posts as $news)
+                            @foreach($pages as $community)
                                 <tr>
-                                    <th>{{ $news->id }}</th>
-                                    <td>{{ str_limit($news->title, 100) }}</td>
-                                    <td>{{ str_limit($news->body, 250) }}</td>
+                                    <th>{{ $community->id }}</th>
+                                    <td>{{ str_limit($community->name, 100) }}</td>
                                     <td>
                                         <div>
-                                            <a href="{{ action('Admin\NewsController@edit', ['id'=> $news->id]) }}">編集</a>
+                                            <a href="{{ action('CommunityController@edit', ['id'=> $community->id]) }}">編集</a>
                                         </div>
                                         <div>
-                                            <a href="{{ action('Admin\NewsController@delete', ['id'=> $news->id]) }}">削除</a>
+                                            <a href="{{ action('CommunityController@delete', ['id'=> $community->id]) }}">削除</a>
                                         </div>
                                     </td>
                                 </tr>
