@@ -38,7 +38,7 @@
                     <div class="form-group row">
                         <label class="col-md-2" for="information">活動情報</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="information" rows="10">{{ $community_form->information )}}</textarea>
+                            <textarea class="form-control" name="information" rows="10">{{ $community_form->information }}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">
