@@ -35,3 +35,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'CommunityController@toppage');
 
 Route::get('/profile', 'NewsController@profile');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
