@@ -11,7 +11,7 @@
         <div class="row">
             <div class="col-md-8 mx-auto">
                 <h2>コミュニティ新規作成</h2>
-                <form action="{{ action('CommunityController@create') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ action('Admin\CommunityController@create') }}" method="post" enctype="multipart/form-data">
 
                     @if (count($errors) > 0)
                         <ul>
@@ -30,13 +30,13 @@
                     <div class="form-group row">
                         <label class="col-md-2" for="name">コミュニティ名</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="name" value="{{ old('title') }}">
+                            <input type="text" class="form-control" name="name" value="{{ old('name') }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2" for="information">活動情報</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="information" rows="10">{{ old('body')}}</textarea>
+                            <textarea class="form-control" name="information" rows="10">{{ old('information')}}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -48,25 +48,25 @@
                     <div class="form-group row">
                         <label class="col-md-2" for="message">メッセージ</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="message" rows="10">{{ old('body')}}</textarea>
+                            <textarea class="form-control" name="message" rows="10">{{ old('message')}}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2" for="facebook_link">facebookページのリンク</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="facebook_link" value="{{ old('title') }}">
+                            <input type="text" class="form-control" name="facebook_link" value="{{ old('facebook_link') }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2" for="contact">お問い合わせ先</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="contact" value="{{ old('title') }}">
+                            <input type="text" class="form-control" name="contact" value="{{ old('contact') }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2" for="video_link">動画のリンク</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="video_link" value="{{ old('title') }}">
+                            <input type="text" class="form-control" name="video_link" value="{{ old('video_link') }}">
                         </div>
                     </div>
                     {{ csrf_field() }}

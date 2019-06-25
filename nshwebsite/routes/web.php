@@ -16,12 +16,12 @@ Route::get('/', function () {
 });
 
 Route::group(['middleware' => 'auth'], function(){
-  Route::get('community/create', 'CommunityController@add');
-  Route::post('community/create', 'CommunityController@create');
-  Route::get('community', 'CommunityController@index');
-  Route::get('community/edit', 'CommunityController@edit');
-  Route::post('community/edit', 'CommunityController@update');
-  Route::get('community/delete', 'CommunityController@delete');
+  Route::get('community/create', 'Admin\CommunityController@add');
+  Route::post('community/create', 'Admin\CommunityController@create');
+  Route::get('community', 'Admin\CommunityController@index');
+  Route::get('community/edit', 'Admin\CommunityController@edit');
+  Route::post('community/edit', 'Admin\CommunityController@update');
+  Route::get('community/delete', 'Admin\CommunityController@delete');
 });
 
 Auth::routes();

@@ -8,7 +8,7 @@
         </div>
         <div class="row py-4">
             <div class="col-md-4">
-                <a href="{{ action('CommunityController@add') }}" role="button" class="btn btn-primary">新規作成</a>
+                <a href="{{ action('Admin\CommunityController@add') }}" role="button" class="btn btn-primary">新規作成</a>
             </div>
         </div>
         <div class="row">
@@ -29,10 +29,10 @@
                                     <td>{{ str_limit($community->name, 100) }}</td>
                                     <td>
                                         <div>
-                                            <a href="{{ action('CommunityController@edit', ['id'=> $community->id]) }}">編集</a>
+                                            <a href="{{ action('Admin\CommunityController@edit', ['id'=> $community->id]) }}">編集</a>
                                         </div>
                                         <div>
-                                            <a href="{{ action('CommunityController@delete', ['id'=> $community->id]) }}">削除</a>
+                                            <a href="{{ action('Admin\CommunityController@delete', ['id'=> $community->id]) }}">削除</a>
                                         </div>
                                     </td>
                                 </tr>
