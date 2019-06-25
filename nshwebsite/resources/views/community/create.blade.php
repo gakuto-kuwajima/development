@@ -30,7 +30,7 @@
                     <div class="form-group row">
                         <label class="col-md-2" for="name">コミュニティ名</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="name" value="{{ old('name') }}">
+                            <input type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="例）NEW STYLE HUSTLE ○○（都道府県）">
                         </div>
                     </div>
                     <div class="form-group row">
