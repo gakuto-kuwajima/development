@@ -12,6 +12,6 @@ class CommunityController extends Controller
     public function show(Request $request)
     {
         $page = Community::find($request->id);
-        return view('community.show',['page' =>$page])
+        return view('community.show',['page' =>$page]);
     }
 }

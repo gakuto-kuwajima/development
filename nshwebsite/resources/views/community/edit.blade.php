@@ -76,6 +76,7 @@
                         <label class="col-md-2" for="video_link">動画のリンク</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="video_link" value="{{ $community_form->video_link }}">
+                            <p>※動画のリンクはyoutubeのみ可。「https://www.youtube.com/watch?v=○○○○○」の○○○○○の部分のみ記入してください。<br>例えば、「https://www.youtube.com/watch?v=iGFKTiqBOBs」の場合、「iGFKTiqBOBs」のみ記入。</p>
                         </div>
                     </div>
                     <div class="form-group row">

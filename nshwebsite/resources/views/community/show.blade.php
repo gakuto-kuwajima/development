@@ -49,7 +49,7 @@
     </div>
     <div class="video_link">
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="{{ $page->video_link }}" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ $page->video_link }}" allowfullscreen></iframe>
         </div>
     </div>
 @endsection
