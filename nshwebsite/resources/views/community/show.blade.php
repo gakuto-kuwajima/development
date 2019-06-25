@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-md-12 mx-auto">
               @if (!is_null($page->eyecatch_path))
-                <img src="{{ asset('storage/image/' . $page->eyecatch_path) }}">
+                <img src="{{ asset('storage/image/' . $page->eyecatch_path) }}" id='eyecatch'>
               @endif
             </div>
         </div>
@@ -30,18 +30,26 @@
     <div class="message">
         <h2>メッセージ</h2>
         <div class="row">
-           @if (!is_null($page->message_image_path))
-            <div class="col-md-3">
-                <img src="{{ asset('storage/image/' . $page->message_image_path) }}">
-            </div>
-           @endif
-            <div class="col-md-9">
-                <p>{{ $page->message }}</p>
+            <div class="col-md-12">
+                <div class="balloon">
+                    @if (!is_null($page->message_image_path))
+                    <figure class="balloon-image-left">
+
+                            <img src="{{ asset('storage/image/' . $page->message_image_path) }}">
+
+                    </figure>
+                    @endif
+                    <div class="balloon-text-right">
+
+                            <p>{{ $page->message }}</p>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="facebook_link">
-        <a href="{{ $page->facebook_link }}" class="btn-square">BUTTON</a>
+        <a href="{{ $page->facebook_link }}" class="btn-square">Facebookページへ</a>
     </div>
     <div class="contact">
         <h2>お問い合わせ</h2>

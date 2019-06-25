@@ -87,7 +87,7 @@ class CommunityController extends Controller
         }
 
         if (isset($community_form['message_image'])){
-          $messageimagepath = $request->file('messate_image')->store('public/image');
+          $messageimagepath = $request->file('message_image')->store('public/image');
           $community->message_image_path = basename($messageimagepath);
           unset($community_form['message_image']);
         }elseif (0 == strcmp($request->remove, 'true')){
