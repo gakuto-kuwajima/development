@@ -47,7 +47,7 @@
         </div>
     </div>
     <div class="contact">
-        <h2　class="pagemidashi2">お問い合わせ</h2>
+        <h2 class="pagemidashi2">お問い合わせ</h2>
         <div class="row">
             <div class="text col-md-12">
                 <p>{{ $page->contact }}</p>
