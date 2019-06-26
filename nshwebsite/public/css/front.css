@@ -411,21 +411,14 @@ h2 {
 margin-bottom: 2em;
 position: relative;
 }
-.balloon:before {
+.balloon:before,.balloon:after {
 clear: both;
 content: "";
 display: block;
 }
-
-.balloon:after {
-clear: both;
-content: "";
-display: block;
-}
-
 .balloon figure {
-width: 60px;
-height: 60px;
+width: 110px;
+height: 110px;
 }
 .balloon-image-left {
 float: left;
@@ -438,7 +431,7 @@ margin-left: 20px;
 .balloon figure img {
 width: 100%;
 height: 100%;
-border: 1px solid #aaa;
+border: solid 3px #d7ebfe;;
 border-radius: 50%;
 margin: 0;
 }
@@ -447,25 +440,15 @@ padding: 5px 0 0;
 font-size: 10px;
 text-align: center;
 }
-.balloon-text-right {
+.balloon-text-right,.balloon-text-left {
 position: relative;
 padding: 10px;
 border: 1px solid;
 border-radius: 10px;
-
+max-width: -webkit-calc(100% - 130px);
+max-width: calc(100% - 130px);
 display: inline-block;
 }
-
-.balloon-text-left {
-position: relative;
-padding: 10px;
-border: 1px solid;
-border-radius: 10px;
-max-width: -webkit-calc(100% - 120px);
-max-width: calc(100% - 120px);
-display: inline-block;
-}
-
 .balloon-text-right {
 border-color: #aaa;
 }

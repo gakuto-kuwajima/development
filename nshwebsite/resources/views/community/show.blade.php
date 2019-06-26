@@ -7,15 +7,15 @@
         <div class="row">
             <div class="col-md-12 mx-auto">
               @if (!is_null($page->eyecatch_path))
-                <img src="{{ asset('storage/image/' . $page->eyecatch_path) }}" id='eyecatch'>
+                <img src="{{ asset('storage/image/' . $page->eyecatch_path) }}" id='eyecatch' class="img-fluid">
               @endif
             </div>
         </div>
     </div>
     <div class="community_name">
         <div class="row">
-            <div class="col-md-12 mx-auto">
-                <h1 class="inner">{{ $page->name }}</h1>
+            <div class="col-md-12">
+                <h1 class="mx-auto">{{ $page->name }}</h1>
             </div>
         </div>
     </div>
@@ -30,20 +30,18 @@
     <div class="message">
         <h2>メッセージ</h2>
         <div class="row">
-            <div class="col-md-12">
-                <div class="balloon">
-                    @if (!is_null($page->message_image_path))
+            <div class="balloon">
+                <div class="col-md-12">
+                @if (!is_null($page->message_image_path))
                     <figure class="balloon-image-left">
-
-                            <img src="{{ asset('storage/image/' . $page->message_image_path) }}">
-
+                        <img src="{{ asset('storage/image/' . $page->message_image_path) }}" class="img-fluid  ">
                     </figure>
-                    @endif
+                @endif
+                @if (!is_null($page->message))
                     <div class="balloon-text-right">
-
-                            <p>{{ $page->message }}</p>
-
+                        <p>{{ $page->message }}</p>
                     </div>
+                @endif
                 </div>
             </div>
         </div>
