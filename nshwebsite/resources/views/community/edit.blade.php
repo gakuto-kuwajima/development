@@ -35,9 +35,58 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="information">活動情報</label>
+                        <label class="col-md-2" for="information">コミュニティ情報</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="information" rows="10" placeholder="例）主に○○で活動しています。練習会は隔週○○日○○時からおこなっています。未経験の方も大歓迎です。">{{ $community_form->information }}</textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-2" for="image1">画像1</label>
+                        <div class="col-md-10">
+                            <input type="file" class="form-control-file" name="image1">
+                            <div class="form-text text-info">
+                                設定中: {{ $community_form->image1_path }}
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="remove" value="true">画像を削除
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-2" for="image2">画像2</label>
+                        <div class="col-md-10">
+                            <input type="file" class="form-control-file" name="image2">
+                            <div class="form-text text-info">
+                                設定中: {{ $community_form->image2_path }}
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="remove" value="true">画像を削除
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-2" for="image3">画像3</label>
+                        <div class="col-md-10">
+                            <input type="file" class="form-control-file" name="image3">
+                            <div class="form-text text-info">
+                                設定中: {{ $community_form->image3_path }}
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" name="remove" value="true">画像を削除
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-2" for="video_link">動画のリンク</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="video_link" value="{{ $community_form->video_link }}">
+                            <p>※動画のリンクはyoutubeのみ可。「https://www.youtube.com/watch?v=○○○○○」の○○○○○の部分のみ記入してください。<br>例えば、「https://www.youtube.com/watch?v=iGFKTiqBOBs」の場合、「iGFKTiqBOBs」のみ記入。</p>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -70,13 +119,6 @@
                         <label class="col-md-2" for="contact">お問い合わせ先</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="contact" value="{{ $community_form->contact }}" placeholder="例）○○@gmail.com、またはFacebookにてご連絡ください。">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-md-2" for="video_link">動画のリンク</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" name="video_link" value="{{ $community_form->video_link }}">
-                            <p>※動画のリンクはyoutubeのみ可。「https://www.youtube.com/watch?v=○○○○○」の○○○○○の部分のみ記入してください。<br>例えば、「https://www.youtube.com/watch?v=iGFKTiqBOBs」の場合、「iGFKTiqBOBs」のみ記入。</p>
                         </div>
                     </div>
                     <div class="form-group row">

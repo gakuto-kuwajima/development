@@ -539,15 +539,11 @@ h2 {
   /*線を消す*/
 }
 
-.pagemidashi2 {
-  padding: 0.25em 0.5em;
-  /*上下 左右の余白*/
-  color: #494949;
-  /*文字色*/
-  background: transparent;
-  /*背景透明に*/
-  border-left: solid 5px #7db4e6;
-  /*左線*/
+.pagemidashi2{
+padding: 0.25em 0.5em;/*上下 左右の余白*/
+color: #494949;/*文字色*/
+background: transparent;/*背景透明に*/
+border-left: solid 5px #7db4e6;/*左線*/
 }
 
 .community_name {
@@ -567,4 +563,3 @@ h2 {
   margin-bottom: 50px;
   display: block;
 }
-

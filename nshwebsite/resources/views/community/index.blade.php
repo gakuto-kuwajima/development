@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="admin-news col-md-12 mx-auto">
+            <div class="index-community col-md-12 mx-auto">
                 <div class="row">
                     <table class="table table-dark">
                         <thead>

@@ -30,6 +30,26 @@ class CommunityController extends Controller
           $community->eyecatch_path = null;
         }
 
+        if(isset($form['image1'])){
+          $image1path = $request->file('image1')->store('public/image');
+          $community->image1_path = basename($image1path);
+        } else {
+          $community->image1_path = null;
+        }
+
+        if(isset($form['image2'])){
+          $image2path = $request->file('image2')->store('public/image');
+          $community->image2_path = basename($image2path);
+        } else {
+          $community->image2_path = null;
+        }
+
+        if(isset($form['image3'])){
+          $image3path = $request->file('image3')->store('public/image');
+          $community->image3_path = basename($image3path);
+        } else {
+          $community->image3_path = null;
+        }
 
         if(isset($form['message_image'])){
           $messageimagepath = $request->file('message_image')->store('public/image');
@@ -42,6 +62,12 @@ class CommunityController extends Controller
         unset($form['_token']);
 
         unset($form['eyecatch']);
+
+        unset($form['image1']);
+
+        unset($form['image2']);
+
+        unset($form['image3']);
 
         unset($form['message_image']);
 
@@ -86,6 +112,34 @@ class CommunityController extends Controller
           $community->eyecatch_path = null;
         }
 
+
+        if (isset($community_form['image1'])){
+          $image1path = $request->file('image1')->store('public/image');
+          $community->image1_path = basename($image1path);
+          unset($community_form['image1']);
+        }elseif (0 == strcmp($request->remove, 'true')){
+          $community->image1_path = null;
+        }
+
+
+        if (isset($community_form['image2'])){
+          $image2path = $request->file('image2')->store('public/image');
+          $community->image2_path = basename($image2path);
+          unset($community_form['image2']);
+        }elseif (0 == strcmp($request->remove, 'true')){
+          $community->image2_path = null;
+        }
+
+
+        if (isset($community_form['image3'])){
+          $image3path = $request->file('image3')->store('public/image');
+          $community->image3_path = basename($image3path);
+          unset($community_form['image3']);
+        }elseif (0 == strcmp($request->remove, 'true')){
+          $community->image3_path = null;
+        }
+
+
         if (isset($community_form['message_image'])){
           $messageimagepath = $request->file('message_image')->store('public/image');
           $community->message_image_path = basename($messageimagepath);
@@ -93,6 +147,7 @@ class CommunityController extends Controller
         }elseif (0 == strcmp($request->remove, 'true')){
           $community->message_image_path = null;
         }
+
 
         unset($community_form['_token']);
         unset($community_form['remove']);
@@ -110,12 +165,5 @@ class CommunityController extends Controller
        $community->delete();
        return redirect('community');
     }
-
-    public function toppage()
-    {
-        return view('toppage');
-    }
-
-
 
 }

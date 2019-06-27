@@ -14,4 +14,9 @@ class CommunityController extends Controller
         $page = Community::find($request->id);
         return view('community.show',['page' =>$page]);
     }
+
+    public function toppage()
+    {
+        return view('toppage');
+    }
 }
