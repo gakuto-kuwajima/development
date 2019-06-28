@@ -29,7 +29,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="name">コミュニティ名</label>
+                        <label class="col-md-2" for="name">コミュニティ名（必須）</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="name" value="{{ $community_form->name }}" placeholder="例）NEW STYLE HUSTLE ○○（都道府県）">
                         </div>
@@ -83,14 +83,26 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="video_link">動画のリンク</label>
+                        <label class="col-md-2" for="video1_link">動画のリンク1</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="video_link" value="{{ $community_form->video_link }}">
+                            <input type="text" class="form-control" name="video1_link" value="{{ $community_form->video1_link }}">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-2" for="video2_link">動画のリンク2</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="video2_link" value="{{ $community_form->video2_link }}">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-2" for="video3_link">動画のリンク3</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="video3_link" value="{{ $community_form->video3_link }}">
                             <p>※動画のリンクはyoutubeのみ可。「https://www.youtube.com/watch?v=○○○○○」の○○○○○の部分のみ記入してください。<br>例えば、「https://www.youtube.com/watch?v=iGFKTiqBOBs」の場合、「iGFKTiqBOBs」のみ記入。</p>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="message_image">メッセージの画像</label>
+                        <label class="col-md-2" for="message_image">代表者メッセージの画像</label>
                         <div class="col-md-10">
                             <input type="file" class="form-control-file" name="message_image">
                             <div class="form-text text-info">
@@ -110,15 +122,27 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="facebook_link">facebookページのリンク</label>
+                        <label class="col-md-2" for="contact">お問い合わせ先</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="contact" value="{{ $community_form->contact }}" placeholder="例）○○@gmail.com、またはFacebookにてご連絡ください。">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-2" for="facebook_link">facebookページのURL（必須）</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="facebook_link" value="{{ $community_form->facebook_link }}">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="contact">お問い合わせ先</label>
+                        <label class="col-md-2" for="instagram_link">InstagramアカウントのURL</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="contact" value="{{ $community_form->contact }}" placeholder="例）○○@gmail.com、またはFacebookにてご連絡ください。">
+                            <input type="text" class="form-control" name="instagram_link" value="{{ $community_form->instagram_link }}">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-2" for="website_link">外部サイトのURL</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="website_link" value="{{ $community_form->website_link }}">
                         </div>
                     </div>
                     <div class="form-group row">
