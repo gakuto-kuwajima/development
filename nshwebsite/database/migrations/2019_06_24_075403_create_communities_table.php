@@ -17,6 +17,7 @@ class CreateCommunitiesTable extends Migration
           $table->Increments('id');
           $table->string('eyecatch_path')->nullable();
           $table->string('name');
+          $table->string('pref');
           $table->string('information')->nullable();
           $table->string('image1_path')->nullable();
           $table->string('image2_path')->nullable();

@@ -14,7 +14,7 @@
             </div>
             <div class="form-group row">
                 <div class="community_name col-md-12 mx-auto">
-                    <h1　class="text-center">{{ $page->name }}</h1>
+                    <h1　class="text-center">{{ $page->name }}<br>({{ $page->pref }})</h1>
                 </div>
             </div>
             <div class="form-group row">
@@ -61,6 +61,7 @@
                 </div>
                 @endif
             </div>
+            @if (!is_null($page->message))
             <div class="form-group row">
                 <div class="message col-md-12 mx-auto">
                     <h2 class="pagemidashi2">代表者メッセージ</h2>
@@ -70,26 +71,25 @@
                                 <img src="{{ asset('storage/image/' . $page->message_image_path) }}" class="img-fluid  ">
                             </figure>
                         @endif
-                        @if (!is_null($page->message))
                             <div class="balloon-text-right">
                                 <p>{!! nl2br(e($page->message)) !!}</p>
                             </div>
-                        @endif
                     </div>
                 </div>
             </div>
+            @endif
             <div class="form-group row">
                 <div class="contact col-md-12 mx-auto">
                     <h2 class="pagemidashi2">お問い合わせ</h2>
                     <div class="text col-md-12">
-                        <p>{{ $page->contact }}</p>
+                        <p>{!! nl2br(e($page->contact)) !!}</p>
                     </div>
                 </div>
             </div>
             <div class="form-group row">
                 <div class="facebook_link col-md-12 mx-auto">
                   <h2 class="pagemidashi2">各種SNSやウェブサイト</h2>
-                  <p>各種SNSやウェブサイトで最新の情報を更新しています。（コミュニティによって運営してるSNSが異なります）</p>
+                  <p>各種SNSやウェブサイトで最新の情報を更新しています。</p>
                       @if (!is_null($page->facebook_link))
                       <ul class="snsbtniti2">
                           <li class ="col-md-12 mx-auto"><a href="{{ $page->facebook_link }}" class="flowbtn11 fl_fb1"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>

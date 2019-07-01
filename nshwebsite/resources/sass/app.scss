@@ -6,3 +6,14 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+
+.navbar-nav a{
+  padding-left: 15px;
+  padding-right: 15px;
+  color:#000;
+}
+
+.navbar-brand img{
+  margin-top: 15px;
+}

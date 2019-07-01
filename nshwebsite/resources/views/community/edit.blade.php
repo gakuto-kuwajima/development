@@ -29,9 +29,15 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="name">コミュニティ名（必須）</label>
+                        <label class="col-md-2" for="name">コミュニティ名（※必須）</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="name" value="{{ $community_form->name }}" placeholder="例）NEW STYLE HUSTLE ○○（都道府県）">
+                            <input type="text" class="form-control" name="name" value="{{ $community_form->name }}" placeholder="例）NEW STYLE HUSTLE TOKYO">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-2" for="pref">都道府県（※必須）</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="pref" value="{{ $community_form->pref }}" placeholder="例）東京">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -128,7 +134,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="facebook_link">facebookページのURL（必須）</label>
+                        <label class="col-md-2" for="facebook_link">facebookページのURL（※必須）</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="facebook_link" value="{{ $community_form->facebook_link }}">
                         </div>
