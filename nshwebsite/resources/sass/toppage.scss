@@ -42,7 +42,7 @@ h2 {
 
 
 //アイキャッチのビデオについて
-.top-image {
+.top-image, {
   position: relative;
   width: 100%;
   background-color: #000000;
@@ -83,6 +83,9 @@ h2 {
 }
 
 
+
+
+
 //間の空間
 .top{
   margin-bottom:50px;
@@ -95,6 +98,9 @@ h2 {
 .section2{
   margin-bottom:80px;
 }
+
+
+
 
 
 //h2見出し　共通
@@ -120,6 +126,9 @@ h2:before {
   background-color: black;
   border-radius: 2px;
 }
+
+
+
 
 
 //section1
@@ -155,24 +164,51 @@ h2:before {
 
 
 
+
+
 //section3
 .section3-text{
 
 }
 
+.pref {
+
+  }
+
+
+
+.pref a{
+  text-decoration: none;
+  color: #fff;
+}
+
+h3 {
+  padding: .5em .75em;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #ccc;
+}
+
+.region{
+  margin-bottom: 20px;
+}
+
+.region-name{
+  margin-bottom: 8px;
+}
 
 .tohoku-btn {
   display: inline-block;
   max-width: 180px;
   text-align: left;
-  background-color: #79BD9A;
+  background-color: #00a364;
   font-size: 20px;
   color: #FFF;
   text-decoration: none;
   font-weight: bold;
-  padding: 10px 24px;
+  padding: 10px 30px;
   border-radius: 4px;
   border-bottom: 4px solid #757575;
+  margin-bottom: 7px;
 }
 
 .tohoku-btn:active {
@@ -185,14 +221,15 @@ h2:before {
   display: inline-block;
   max-width: 180px;
   text-align: left;
-  background-color: #79BD9A;
+  background-color: #90ba1e;
   font-size: 20px;
   color: #FFF;
   text-decoration: none;
   font-weight: bold;
-  padding: 10px 24px;
+  padding: 10px 30px;
   border-radius: 4px;
   border-bottom: 4px solid #757575;
+  margin-bottom: 7px;
 }
 
 .kanto-btn:active {
@@ -205,14 +242,15 @@ h2:before {
   display: inline-block;
   max-width: 180px;
   text-align: left;
-  background-color: #79BD9A;
+  background-color: #e9ca0b;
   font-size: 20px;
   color: #FFF;
   text-decoration: none;
   font-weight: bold;
-  padding: 10px 24px;
+  padding: 10px 30px;
   border-radius: 4px;
-  border-bottom: 4px solid #757575;
+  border-bottom: 4px solid #586365;
+  margin-bottom: 7px;
 }
 
 .chubu-btn:active {
@@ -225,14 +263,15 @@ h2:before {
   display: inline-block;
   max-width: 180px;
   text-align: left;
-  background-color: #79BD9A;
+  background-color: #e69600;
   font-size: 20px;
   color: #FFF;
   text-decoration: none;
   font-weight: bold;
-  padding: 10px 24px;
+  padding: 10px 30px;
   border-radius: 4px;
-  border-bottom: 4px solid #757575;
+  border-bottom: 4px solid #1B435D;
+  margin-bottom: 7px;
 }
 
 .kansai-btn:active {
@@ -245,14 +284,15 @@ h2:before {
   display: inline-block;
   max-width: 180px;
   text-align: left;
-  background-color: #79BD9A;
+  background-color: #ec6109;
   font-size: 20px;
   color: #FFF;
   text-decoration: none;
   font-weight: bold;
-  padding: 10px 24px;
+  padding: 10px 30px;
   border-radius: 4px;
-  border-bottom: 4px solid #757575;
+  border-bottom: 4px solid #4C4C4C;
+  margin-bottom: 7px;
 }
 
 .chugoku-btn:active {
@@ -265,14 +305,15 @@ h2:before {
   display: inline-block;
   max-width: 180px;
   text-align: left;
-  background-color: #79BD9A;
+  background-color: #e96f84;
   font-size: 20px;
   color: #FFF;
   text-decoration: none;
   font-weight: bold;
-  padding: 10px 24px;
+  padding: 10px 30px;
   border-radius: 4px;
   border-bottom: 4px solid #757575;
+  margin-bottom: 7px;
 }
 
 .shikoku-btn:active {
@@ -285,14 +326,15 @@ h2:before {
   display: inline-block;
   max-width: 180px;
   text-align: left;
-  background-color: #79BD9A;
+  background-color: #624b94;
   font-size: 20px;
   color: #FFF;
   text-decoration: none;
   font-weight: bold;
-  padding: 10px 24px;
+  padding: 10px 30px;
   border-radius: 4px;
-  border-bottom: 4px solid #757575;
+  border-bottom: 4px solid #383838;
+  margin-bottom: 7px;
 }
 
 .kyushu-okinawa-btn:active {
