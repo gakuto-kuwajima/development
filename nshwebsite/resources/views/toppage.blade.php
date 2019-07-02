@@ -1,132 +1,116 @@
-@extends('layouts.front')
+@extends('layouts.toppage')
 
 @section('content')
     <div class="container">
         <div class="top">
-            <div class="row">
+            <div class="row no-gutters">
                 <div class="top-image">
-                    <video src="{{ asset('movies/newstylehustlejapan2017.mp4')}}" muted autoplay loop class="img-fluid" id="top-movie"></video>
+                    <video src="{{ asset('movies/newstylehustlejapan2017.mp4')}}" muted autoplay class="img-fluid" id="top-movie"></video>
                     <img src="{{ asset('img/newstylehustlejapan-white.png')}}" class="img-fluid" id="top-icon">
+                    <h1>NEW STYLE HUSTLE<br>JAPAN WEBSITE</h1>
                 </div>
             </div>
         </div>
-        <div class="about">
-            <h2>ニュースタイルハッスルとは</h2>
-            <div class="row">
+        <div class="section1">
+            <div class="row no-gutters">
                 <div class="text col-md-6">
-                    <p>世界中で踊られている最新のペアダンス、それがニュースタイルハッスル。<br>自由な発想で、自分たちの好きな音楽をパートナーと表現します。<br><br>1970年代に誕生したディスコダンス「ハッスル」を元に、2009年ごろにニューヨークでジェフ・セルビーらダンサーたちによって考案されました。<br><br>ダンス初心者でも経験者でも、誰でも始めたその日から楽しめるというのがニュースタイルハッスルの大きな魅力です。</p>
+                    <div id="section-h2">
+                        <h2>ABOUT<br>NEW STYLE HUSTLE</h2>
+                    </div>
+                    <div class="section-text">
+                        <p>世界中で踊られている最新のペアダンス、それがニュースタイルハッスル。<br>1970年代に流行したディスコダンス「ハッスル」を元に、2009年ごろにニューヨーク誕生しました。<br>自由な発想で、自分たちの好きな音楽をパートナーと表現します。</p>
+                    </div>
+                    <div class="section1-link">
+                        <a href="#" class="section1-button">
+                            <i class="fa fa-caret-right"></i> もっと詳しく
+                        </a>
+                    </div>
                 </div>
                 <div class="image col-md-6">
                     <img src="{{ asset('img/zabueri_example.jpg')}}" class="img-fluid">
                 </div>
             </div>
         </div>
-        <div class="section1">
-          <h2>世界中に広がるニュースタイルハッスル</h2>
-          <div class="row">
-              <div class="image col-md-6">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fnewstylehustle%2Fvideos%2F1807520412896273%2F&show_text=0&width=560" width="560" height="295" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+        <div class="section2">
+            <div class="row no-gutters">
+                <div class="text col-md-6 order-md-2">
+                    <div id="section-h2">
+                        <h2 class="">NEW STYLE HUSTLE<br>JAPAN</h2>
+                    </div>
+                    <div class="section-text">
+                        <p>日本でも大きな広がりを見せるニュースタイルハッスル。<br>2017年にはニュースタイルハッスルの創始者Jeff Selby(ジェフ・セルビー)とRobyn Baltzer（ロビン・バルツァー）が来日。<br>（※動画参照）<br>北から南まで日本全国にコミュニティが増え続けています。</p>
+                    </div>
                 </div>
-              </div>
-              <div class="text col-md-6 mx-auto">
-                  <p>アメリカを始め、主にイギリスやイタリア、オランダ、ポーランド、チェコ、スロバキア、オーストリア、フィンランド、中国、台湾、韓国、そして日本など世界中で踊られているニュースタイルハッスル。<br><br>日本では東京を中心に、大阪や名古屋、宮城など様々な都道府県でコミュニティが作られ、それぞれの地域でイベントや練習会が行われています。<br><br>また、DREAMS COME TRUEのライブや嵐の楽曲（「未完」）PV、NHKの番組「Eダンスアカデミー」などでも踊られ、エンターテイメントの世界でも注目を浴びています。</p>
-              </div>
-          </div>
-        </div>
-        <div class="japan-community">
-          <h2>全国のコミュニティ</h2>
-          <div class="row">
-              <div class="text col-md-12">
-                  <p>現在日本各地にニュースタイルハッスルのコミュニティが作られています。<br><br>気になる地域があれば、ぜひその地域のコミュニティの様子をのぞいてみてください。</p>
-              </div>
-          </div>
-          <div class="row">
-              <div class="hmap">
-                  <div class="hmap_l1">
-                      <ul class="hokkaido">
-                          <li><a href="./dohoku/" class="pbh">道北<span></span></a></li>
-                          <li><a href="./doo/" class="pb5">道央<span></span></a></li>
-                          <li><a href="./doto/" class="pb5">道東<span></span></a></li>
-                          <li><a href="./donan/" class="pbh">道南<span></span></a></li>
-                      </ul>
-                      <ul class="tohoku">
-                          <li><a href="./aomori/" class="pb10">青森県<span></span></a></li>
-                          <li><a href="./akita/" class="pb5">秋田県<span></span></a></li>
-                          <li><a href="./iwate/" class="pb5">岩手県<span></span></a></li>
-                          <li><a href="./yamagata/" class="pb5">山形県<span></span></a></li>
-                          <li><a href="./miyagi/" class="pb5">宮城県<span></span></a></li>
-                          <li><a href="./fukushima/" class="pb10">福島県<span></span></a></li>
-                      </ul>
-                      <ul class="kanto">
-                          <li><a href="./gunma/" class="pb3">群馬県<span></span></a></li>
-                          <li><a href="./tochigi/" class="pb3">栃木県<span></span></a></li>
-                          <li><a href="./ibaraki/" class="pb3">茨城県<span></span></a></li>
-                          <li><a href="./saitama/" class="pb3">埼玉県<span></span></a></li>
-                          <li><a href="./tokyo/" class="pb3">東京都<span></span></a></li>
-                          <li><a href="./chiba/" class="pb3">千葉県<span></span></a></li>
-                          <li><a href="./kanagawa/" class="pb5">神奈川県<span></span></a></li>
-                      </ul>
-                  </div>
-                  <div class="hmap_l2">
-                      <ul class="hokushin">
-                          <li><a href="./ishikawa/" class="pb3">石川県<span></span></a></li>
-                          <li><a href="./toyama/" class="pb3">富山県<span></span></a></li>
-                          <li><a href="./niigata/" class="pb3">新潟県<span></span></a></li>
-                          <li><a href="./fukui/" class="pb3">福井県<span></span></a></li>
-                          <li><a href="./nagano/" class="pb3">長野県<span></span></a></li>
-                          <li><a href="./yamanashi/" class="pb3">山梨県<span></span></a></li>
-                      </ul>
-                      <ul class="tokai">
-                          <li><a href="./gifu/" class="pb10">岐阜県<span></span></a></li>
-                          <li><a href="./mie/" class="pb3">三重県<span></span></a></li>
-                          <li><a href="./aichi/" class="pb3">愛知県<span></span></a></li>
-                          <li><a href="./shizuoka/" class="pb3">静岡県<span></span></a></li>
-                      </ul>
-                  </div>
-                  <div class="hmap_l3">
-                      <ul class="kansai">
-                          <li><a href="./hyogo/" class="pb3">兵庫県<span></span></a></li>
-                          <li><a href="./kyoto/" class="pb3">京都府<span></span></a></li>
-                          <li><a href="./shiga/" class="pb3">滋賀県<span></span></a></li>
-                          <li><a href="./osaka/" class="pb5">大阪府<span></span></a></li>
-                          <li><a href="./nara/" class="pb5">奈良県<span></span></a></li>
-                          <li><a href="./wakayama/" class="pb5">和歌山県<span></span></a></li>
-                      </ul>
-                  </div>
-                  <div class="hmap_l4">
-                      <ul class="chugoku">
-                          <li><a href="./yamaguchi/" class="pb3">山口県<span></span></a></li>
-                          <li><a href="./shimane/" class="pb3">島根県<span></span></a></li>
-                          <li><a href="./tottori/" class="pb3">鳥取県<span></span></a></li>
-                          <li><a href="./hiroshima/" class="pb5">広島県<span></span></a></li>
-                          <li><a href="./okayama/" class="pb5">岡山県<span></span></a></li>
-                      </ul>
-                      <ul class="shikoku">
-                          <li><a href="./ehime/" class="pb5">愛媛県<span></span></a></li>
-                          <li><a href="./kagawa/" class="pb5">香川県<span></span></a></li>
-                          <li><a href="./kochi/" class="pb5">高知県<span></span></a></li>
-                          <li><a href="./tokushima/" class="pb5">徳島県<span></span></a></li>
-                      </ul>
-                  </div>
-                  <div class="hmap_l5">
-                      <ul class="kyushu">
-                          <li><a href="./nagasaki/" class="pb3">長崎県<span></span></a></li>
-                          <li><a href="./saga/" class="pb3">佐賀県<span></span></a></li>
-                          <li><a href="./fukuoka/" class="pb3">福岡県<span></span></a></li>
-                          <li><a href="./kumamoto/" class="pb5">熊本県<span></span></a></li>
-                          <li><a href="./oita/" class="pb5">大分県<span></span></a></li>
-                          <li><a href="./kagoshima/" class="pb5">鹿児島県<span></span></a></li>
-                          <li><a href="./miyazaki/" class="pb5">宮崎県<span></span></a></li>
-                      </ul>
-                      <ul class="okinawa">
-                          <li><a href="./okinawa/" class="pb5">沖縄県<span></span></a></li>
-                      </ul>
-                  </div>
-              </div>
+                <div class="image col-md-6 order-1-md-1">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3hbyl5Hfmqc?rel=0" allowfullscreen></iframe>
+                    </div>
+               </div>
             </div>
-          </div>
         </div>
-    </div>
+        <div class="section3">
+            <div class="row no-gutters">
+                <div class="col-md-12">
+                    <div id="section-h2">
+                        <h2 class="center-block">Japan Communities</h2>
+                    </div>
+              　    <div class="section3-text col-md-9 mx-auto">
+                  　   <p>全国にあるニュースタイルハッスルのコミュニティの一覧です。<br>住んでいる地域、または訪れる予定がある場所の近くにコミュニティがあったらぜひのぞいてみてください。</p>
+              　    </div>
+                    <div class="pref col-md-9 mx-auto">
+                        <div class="hokkaido">
+                            <h3>北海道地方</3>
+                            <p>コミュニティなし</p>
+                        </div>
+                        <div class="tohoku">
+                        　  <h3>東北地方</3>
+                          　<div class="tohoku-list">
+                            　　<a href="#" class="tohoku-btn">宮城</a>
+                            </div>
+                        </div>
+                        <div class="kanto">
+                          <h3>関東地方</3>
+                          <div class="kanto-list">
+                              <a href="#" class="kanto-btn">東京</a>
+                              <a href="#" class="kanto-btn">千葉</a>
+                              <a href="#" class="kanto-btn">埼玉</a>
+                              <a href="#" class="kanto-btn">栃木</a>
+                          </div>
+                        </div>
+                        <div class="chubu">
+                          <h3>中部地方</3>
+                          <div class="chubu-list">
+                            　<a href="#" class="chubu-btn">愛知</a>
+                            　<a href="#" class="chubu-btn">山梨</a>
+                          </div>
+                        </div>
+                        <div class="kansai">
+                          <h3>関西地方</3>
+                          <div class="kansai-list">
+                              <a href="#" class="kansai-btn">大阪</a>
+                          </div>
+                        </div>
+                        <div class="chugoku">
+                            <h3>中国地方</3>
+                            <div class="chugoku-list">
+                            　    <a href="#" class="chugoku-btn">広島</a>
+                            </div>
+                        </div>
+                        <div class="shikoku">
+                          　<h3>四国地方</3>
+                            <div class="chugoku-list">
+                          　　  <a href="#" class="shikoku-btn">愛媛</a>
+                            </div>
+                        </div>
+                        <div class="kyushu-okinawa">
+                          　<h3>九州・沖縄地方</3>
+                            <div class="kyushu-okinawa-list">
+                        　　    <a href="#" class="kyushu-okinawa-btn">沖縄</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 @endsection
