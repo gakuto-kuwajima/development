@@ -63,6 +63,53 @@
                 {{-- コンテンツをここに入れるため、@yieldで空けておきます。 --}}
                 @yield('content')
             </main>
+            <div class="container">
+                <div class="row">
+                   <div class="col-md-12 mx-auto">
+                      <hr color="#c0c0c0">
+                   </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <div class="footer-share">
+                        <div class="row no-gutters">
+                           <div class="share-text col-md-3 mx-auto">
+                               <p　class="text-center">SHARE!</p>
+                           </div>
+                        </div>
+                        <div class="row no-gutters">
+                           <div class="share-button col-md-12 mx-auto">
+                      　        <!--twitter-->
+                               <ul class="snsbtniti col-md-2 mx-auto">
+                                   <li><a href="TwitterのプロフィールURL" class="flowbtn10"><i class="fab fa-twitter"></i></a></li>
+                                <!--facebook-->
+                                   <li><a href="FacebookページのURL" class="flowbtn10"><i class="fab fa-facebook-f"></i></a>
+                               </ul>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="footer-main">
+                        <div class="row no-gutters">
+                            <div class="footer-left col-md-6">
+                                <ul>
+                                    <li><a href="#">ニュースタイルハッスルとは</a></li>
+                                    <li><a href="#">全国のコミュニティ</a></li>
+                                    <li><a href="#">お問い合わせ</a></li>
+                                    <li><a href="#">サイトマップ</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-right col-md-6">
+                                <a href="{{ url('/') }}">
+                                    <img src="{{ asset('img/newstylehustlejapan-logo.png') }}">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="copyright">
+                    </div>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
