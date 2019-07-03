@@ -91,22 +91,19 @@
                     </div>
                     <div class="footer-main">
                         <div class="row no-gutters">
-                            <div class="footer-left col-md-6">
+                            <div class="footer-menu col-md-12 mx-auto">
                                 <ul>
+                                    <li><a href="#">トップページ</a></li>
                                     <li><a href="#">ニュースタイルハッスルとは</a></li>
                                     <li><a href="#">全国のコミュニティ</a></li>
                                     <li><a href="#">お問い合わせ</a></li>
                                     <li><a href="#">サイトマップ</a></li>
                                 </ul>
                             </div>
-                            <div class="footer-right col-md-6">
-                                <a href="{{ url('/') }}">
-                                    <img src="{{ asset('img/newstylehustlejapan-logo.png') }}">
-                                </a>
-                            </div>
                         </div>
                     </div>
                      <div class="copyright">
+                        <address>© 2019 NEW STYLE HUSTLE JAPAN</address>
                     </div>
                 </div>
             </footer>
