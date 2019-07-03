@@ -72,26 +72,22 @@
             </div>
             <footer>
                 <div class="container">
-                    <div class="footer-share">
-                        <div class="row no-gutters">
-                           <div class="share-text col-md-3 mx-auto">
-                               <p　class="text-center">SHARE!</p>
-                           </div>
-                        </div>
-                        <div class="row no-gutters">
-                           <div class="share-button col-md-12 mx-auto">
+                    <div class="row no-gutters">
+                        <div class="footer-section1 col-md-4 mx-auto">
+                            <div class="footer-share">
+                               <div class="share-title mx-auto">
+                                  <p　class="text-center">SHARE!</p>
+                               </div>
+                            </div>
+                            <div class="share-button">
+                                <ul class="snsbtniti">
                       　        <!--twitter-->
-                               <ul class="snsbtniti col-md-2 mx-auto">
-                                   <li><a href="TwitterのプロフィールURL" class="flowbtn10"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="TwitterのプロフィールURL" class="flowbtn10"><i class="fab fa-twitter"></i></a></li>
                                 <!--facebook-->
-                                   <li><a href="FacebookページのURL" class="flowbtn10"><i class="fab fa-facebook-f"></i></a>
-                               </ul>
-                           </div>
-                        </div>
-                    </div>
-                    <div class="footer-main">
-                        <div class="row no-gutters">
-                            <div class="footer-menu col-md-12 mx-auto">
+                                    <li><a href="FacebookページのURL" class="flowbtn10"><i class="fab fa-facebook-f"></i></a>
+                                </ul>
+                            </div>
+                            <div class="footer-menu mx-auto">
                                 <ul>
                                     <li><a href="#">トップページ</a></li>
                                     <li><a href="#">ニュースタイルハッスルとは</a></li>
@@ -101,7 +97,23 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                        <div class="footer-section2 col-md-4 mx-auto">
+                            <div class="description">
+                                <div class="description-title">
+                                    <p>NEW STYLE HUSTLE JAPANとは</p>
+                                </div>
+                                <div class="description-sentence">
+                                    <p>NEW STYLE HUSTLE JAPANとは</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-section3 col-md-4 mx-auto">
+                          <div class="footer-logo">
+                              <a class="navbar-brand" href="{{ url('/') }}">
+                                  <img src="{{ asset('img/newstylehustlejapan-logo.png') }}">
+                              </a>
+                          </div>
+                     </div>
                      <div class="copyright">
                         <address>© 2019 NEW STYLE HUSTLE JAPAN</address>
                     </div>

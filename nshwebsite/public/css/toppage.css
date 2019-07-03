@@ -418,33 +418,26 @@ h3 {
 ul.snsbtniti {
   padding: 0 !important;
   list-style-type: none !important;
-  padding: 0 !important;
-  width: 200px;
-  margin: 0 auto;
+  text-align: center;
 }
 
 /* アイコン全体の位置 */
 
-.snsbtniti {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
 /* アイコン同士の余白 */
 
 .snsbtniti li {
-  flex: 0 0 50%;
+  display: inline-block;
   text-align: center !important;
+  padding: 0 25px;
 }
 
 .footer-share {
   margin-bottom: 10px;
 }
 
-.share-text p {
+.share-title p {
   font-size: 3rem;
-  margin-bottom: -15px;
+  margin-bottom: -30px;
 }
 
 .footer-menu ul {
@@ -454,7 +447,6 @@ ul.snsbtniti {
 }
 
 .footer-menu li {
-  text-align: center;
   margin: 0 auto;
 }
 
