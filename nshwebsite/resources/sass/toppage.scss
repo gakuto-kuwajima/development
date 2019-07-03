@@ -140,7 +140,7 @@ h2:before {
 
 .section1-link{
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -421,6 +421,9 @@ padding: 0 25px;
 .share-title p {
   font-size: 3rem;
   margin-bottom: -30px;
+  text-align:center;
+
+
 }
 
 
@@ -434,10 +437,15 @@ padding: 0 25px;
   list-style: none;
   display:block;
   padding-left: 0;
+  float:left;
+　position:relative;
+　left:50%;
 }
 
 .footer-menu li{
   margin: 0 auto;
+  position:relative;
+  left:-50%;
 }
 
 .footer-menu a{
@@ -446,7 +454,28 @@ padding: 0 25px;
 }
 
 
+.description{
+  margin-top: 40px;
+}
 
+.description-title{
+  font-size: 1.1em;
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.footer-logo {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-top: 30px;
+}
+.footer-logo.footer-logoimg {
+  vertical-align:middle;
+  height:120px;
+}
 
 .copyright{
     font-size: 80%; /*フォントサイズの指定*/

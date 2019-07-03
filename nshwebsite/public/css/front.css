@@ -166,7 +166,7 @@ div.hmap a:visited {
 .hmap a:hover {
   overflow: visible;
   text-overflow: clip;
-  opacity: 0.8;
+  opacity: .8;
   -ms-filter: "alpha(opacity=80)";
 }
 
@@ -485,7 +485,7 @@ h2 {
 
 .balloon-text-right:before {
   position: absolute;
-  content: "";
+  content: '';
   border: 10px solid transparent;
   border-right: 10px solid #e0edff;
   top: 15px;
@@ -494,7 +494,7 @@ h2 {
 
 .balloon-text-right:after {
   position: absolute;
-  content: "";
+  content: '';
   border: 10px solid transparent;
   border-right: 10px solid #e0edff;
   top: 15px;
@@ -503,7 +503,7 @@ h2 {
 
 .balloon-text-left:before {
   position: absolute;
-  content: "";
+  content: '';
   border: 10px solid transparent;
   border-left: 10px solid #aaa;
   top: 15px;
@@ -512,7 +512,7 @@ h2 {
 
 .balloon-text-left:after {
   position: absolute;
-  content: "";
+  content: '';
   border: 10px solid transparent;
   border-left: 10px solid #fff;
   top: 15px;
@@ -551,7 +551,7 @@ h2 {
 /* ボタン全体 */
 
 .flowbtn11 {
-  font-family: "Verdana", sans-serif;
+  font-family: 'Verdana',sans-serif;
   border-radius: 4px;
   position: relative;
   display: inline-block;
@@ -585,7 +585,7 @@ h2 {
 /* Instagramオレンジグラデ背景色 */
 
 .insta_btn11:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 17px;
   left: -75px;
@@ -622,7 +622,7 @@ h2 {
   position: relative;
   left: 8px;
   bottom: 2px;
-  transition: 0.6s;
+  transition: .6s;
   display: inline-block;
 }
 

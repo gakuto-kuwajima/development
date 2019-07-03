@@ -124,7 +124,7 @@ h2 {
 }
 
 h2:before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -15px;
   display: inline-block;
@@ -145,7 +145,7 @@ h2:before {
 
 .section1-link {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -153,11 +153,11 @@ h2:before {
   position: relative;
   display: inline-block;
   font-weight: bold;
-  padding: 0.3em 1em;
+  padding: 0.3em 1.0em;
   text-decoration: none;
   color: #00BCD4;
   background: #ECECEC;
-  transition: 0.4s;
+  transition: .4s;
   vertical-align: middle;
 }
 
@@ -180,7 +180,7 @@ h2:before {
 }
 
 h3 {
-  padding: 0.5em 0.75em;
+  padding: .5em .75em;
   background-color: #f6f6f6;
   border-bottom: 1px solid #ccc;
 }
@@ -346,7 +346,7 @@ h3 {
   display: inline-block;
   font-size: 35px;
   text-decoration: none;
-  transition: 0.5s;
+  transition: .5s;
   color: #444;
 }
 
@@ -438,20 +438,49 @@ ul.snsbtniti {
 .share-title p {
   font-size: 3rem;
   margin-bottom: -30px;
+  text-align: center;
 }
 
 .footer-menu ul {
   list-style: none;
   display: block;
   padding-left: 0;
+  float: left;
+  position: relative;
+  left: 50%;
 }
 
 .footer-menu li {
   margin: 0 auto;
+  position: relative;
+  left: -50%;
 }
 
 .footer-menu a {
   color: #000;
+}
+
+.description {
+  margin-top: 40px;
+}
+
+.description-title {
+  font-size: 1.1em;
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+}
+
+.footer-logo {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-top: 30px;
+}
+
+.footer-logo.footer-logoimg {
+  vertical-align: middle;
+  height: 120px;
 }
 
 .copyright {

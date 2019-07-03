@@ -76,7 +76,7 @@
                         <div class="footer-section1 col-md-4 mx-auto">
                             <div class="footer-share">
                                <div class="share-title mx-auto">
-                                  <p　class="text-center">SHARE!</p>
+                                  <p>SHARE</p>
                                </div>
                             </div>
                             <div class="share-button">
@@ -84,7 +84,7 @@
                       　        <!--twitter-->
                                     <li><a href="TwitterのプロフィールURL" class="flowbtn10"><i class="fab fa-twitter"></i></a></li>
                                 <!--facebook-->
-                                    <li><a href="FacebookページのURL" class="flowbtn10"><i class="fab fa-facebook-f"></i></a>
+                                    <li><a href="FacebookページのURL" class="flowbtn10"><i class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
                             <div class="footer-menu mx-auto">
@@ -100,17 +100,17 @@
                         <div class="footer-section2 col-md-4 mx-auto">
                             <div class="description">
                                 <div class="description-title">
-                                    <p>NEW STYLE HUSTLE JAPANとは</p>
+                                    <p>NEW STYLE HUSTLE JAPAN WEBSITEとは</p>
                                 </div>
                                 <div class="description-sentence">
-                                    <p>NEW STYLE HUSTLE JAPANとは</p>
+                                    <p>NEW STYLE HUSTLE JAPAN WEBSITEでは,日本におけるニュースタイルハッスルの活動やコミュニティを紹介しています。<br>ニュースタイルハッスルが日本中に広がることを願っています。</p>
                                 </div>
                             </div>
                         </div>
                         <div class="footer-section3 col-md-4 mx-auto">
                           <div class="footer-logo">
-                              <a class="navbar-brand" href="{{ url('/') }}">
-                                  <img src="{{ asset('img/newstylehustlejapan-logo.png') }}">
+                              <a href="{{ url('/') }}">
+                                  <img class="footer-logoimg" src="{{ asset('img/footer-logo.png') }}">
                               </a>
                           </div>
                      </div>
