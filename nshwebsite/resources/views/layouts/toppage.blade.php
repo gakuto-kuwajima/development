@@ -84,7 +84,7 @@
                       　        <!--twitter-->
                                     <li><a href="TwitterのプロフィールURL" class="flowbtn10"><i class="fab fa-twitter"></i></a></li>
                                 <!--facebook-->
-                                    <li><a href="FacebookページのURL" class="flowbtn10"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="FacebookページのURL" class="flowbtn10 footerfbbtn"><i class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
                             <div class="footer-menu mx-auto">

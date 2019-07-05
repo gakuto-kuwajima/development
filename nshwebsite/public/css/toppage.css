@@ -124,7 +124,7 @@ h2 {
 }
 
 h2:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -15px;
   display: inline-block;
@@ -153,11 +153,11 @@ h2:before {
   position: relative;
   display: inline-block;
   font-weight: bold;
-  padding: 0.3em 1.0em;
+  padding: 0.3em 1em;
   text-decoration: none;
   color: #00BCD4;
   background: #ECECEC;
-  transition: .4s;
+  transition: 0.4s;
   vertical-align: middle;
 }
 
@@ -180,7 +180,7 @@ h2:before {
 }
 
 h3 {
-  padding: .5em .75em;
+  padding: 0.5em 0.75em;
   background-color: #f6f6f6;
   border-bottom: 1px solid #ccc;
 }
@@ -346,7 +346,7 @@ h3 {
   display: inline-block;
   font-size: 35px;
   text-decoration: none;
-  transition: .5s;
+  transition: 0.5s;
   color: #444;
 }
 
@@ -428,7 +428,11 @@ ul.snsbtniti {
 .snsbtniti li {
   display: inline-block;
   text-align: center !important;
-  padding: 0 25px;
+  padding: 0 20px;
+}
+
+.footerfbbtn {
+  padding: 0 8.475px;
 }
 
 .footer-share {
@@ -467,7 +471,6 @@ ul.snsbtniti {
 .description-title {
   font-size: 1.1em;
   text-decoration: underline;
-  text-align: center;
   font-weight: bold;
 }
 
