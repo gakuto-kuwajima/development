@@ -54,6 +54,10 @@
                              <li><a href="#">お問い合わせ</a></li>
                             {{-- 以上までを追記 --}}
                         </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input type="search" class="form-control search-form mr-sm-2" placeholder="検索..." aria-label="検索...">
+                            <button type="submit" class="btn btn-outline-success my-2 my-sm-0">検索</button>
+                        </form>
                     </div>
                 </div>
             </nav>

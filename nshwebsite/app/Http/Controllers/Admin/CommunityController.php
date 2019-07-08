@@ -82,8 +82,19 @@ class CommunityController extends Controller
 
     public function index(Request $request)
     {
-        $pages = Community::all();
-        return view('community.index',['pages'=>$pages]);
+        $conditions =  ['name', 'pref','information'];
+        if ($conditions != '') {
+            $pages = Community::where(function ($query) use ($conditions) {
+              foreach ($conditions as $condition) {
+                  $query->where('condition', 'LIKE', "%{$condition}%");
+              }
+            })
+            ->get();
+
+        } else{
+            $pages = Community::all();
+        }
+        return view('community.index',['pages'=>$pages, 'conditions' =>$conditons]);
     }
 
 

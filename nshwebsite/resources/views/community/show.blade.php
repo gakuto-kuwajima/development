@@ -19,7 +19,7 @@
             </div>
             <div class="form-group row">
                 <div class="information col-md-12 mx-auto">
-                    <h2 class="pagemidashi2">コミュニティ情報</h2>
+                    <h2>コミュニティ情報</h2>
                     <p>{!! nl2br(e($page->information)) !!}</p>
                 </div>
             </div>
@@ -64,7 +64,7 @@
             @if (!is_null($page->message))
             <div class="form-group row">
                 <div class="message col-md-12 mx-auto">
-                    <h2 class="pagemidashi2">代表者メッセージ</h2>
+                    <h2>代表者メッセージ</h2>
                     <div class="balloon">
                         @if (!is_null($page->message_image_path))
                             <figure class="balloon-image-left">
@@ -80,7 +80,7 @@
             @endif
             <div class="form-group row">
                 <div class="contact col-md-12 mx-auto">
-                    <h2 class="pagemidashi2">お問い合わせ</h2>
+                    <h2>お問い合わせ</h2>
                     <div class="text col-md-12">
                         <p>{!! nl2br(e($page->contact)) !!}</p>
                     </div>
@@ -88,7 +88,7 @@
             </div>
             <div class="form-group row">
                 <div class="facebook_link col-md-12 mx-auto">
-                  <h2 class="pagemidashi2">各種SNSやウェブサイト</h2>
+                  <h2>各種SNSやウェブサイト</h2>
                   <p>各種SNSやウェブサイトで最新の情報を更新しています。</p>
                       @if (!is_null($page->facebook_link))
                       <ul class="snsbtniti2">
@@ -105,6 +105,11 @@
                           <li class ="col-md-12 mx-auto"><a href="{{ $page->website_link }}" class="flowbtn11 fl_web11"><i class="fas fa-laptop"></i><span>Website</span></a></li>
                       </ul>
                       @endif
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-12 page-return">
+                    <a href="http://127.0.0.1:8000/#pref-title" class="btn-flat-border">戻る</a>
                 </div>
             </div>
         </div>

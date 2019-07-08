@@ -14,11 +14,11 @@
         <div class="section1">
             <div class="row no-gutters">
                 <div class="text col-md-6">
-                    <div id="section-h2">
+                    <div class="section-h2">
                         <h2>ABOUT<br>NEW STYLE HUSTLE</h2>
                     </div>
                     <div class="section-text">
-                        <p>世界中で踊られている最新のペアダンス、それがニュースタイルハッスル。<br>1970年代に流行したディスコダンス「ハッスル」を元に、2009年ごろにニューヨーク誕生しました。<br>自由な発想で、自分たちの好きな音楽をパートナーと表現します。</p>
+                        <p>世界中で踊られている最新のペアダンス、それがニュースタイルハッスル。<br>1970年代に流行したディスコダンス「ハッスル」を元に、2009年ごろにニューヨークで誕生しました。<br>自由な発想で、自分たちの好きな音楽をパートナーと表現します。</p>
                     </div>
                     <div class="section1-link">
                         <a href="#" class="section1-button">
@@ -34,8 +34,8 @@
         <div class="section2">
             <div class="row no-gutters">
                 <div class="text col-md-6 order-md-2">
-                    <div id="section-h2">
-                        <h2 class="">NEW STYLE HUSTLE<br>JAPAN</h2>
+                    <div class="section-h2">
+                        <h2>NEW STYLE HUSTLE<br>JAPAN</h2>
                     </div>
                     <div class="section-text">
                         <p>日本でも大きな広がりを見せるニュースタイルハッスル。<br>2017年にはニュースタイルハッスルの創始者Jeff Selby(ジェフ・セルビー)とRobyn Baltzer（ロビン・バルツァー）が来日。<br>（※動画参照）<br>北から南まで日本全国にコミュニティが増え続けています。</p>
@@ -51,8 +51,8 @@
         <div class="section3">
             <div class="row no-gutters">
                 <div class="col-md-12">
-                    <div id="section-h2">
-                        <h2 class="center-block">Japan Communities</h2>
+                    <div class="section-h2" id="pref-title">
+                        <h2>Japan Communities</h2>
                     </div>
               　    <div class="section3-text col-md-9 mx-auto">
                   　   <p>全国にあるニュースタイルハッスルのコミュニティの一覧です。<br>住んでいる地域、または訪れる予定がある場所の近くにコミュニティがあったらぜひのぞいてみてください。</p>
@@ -66,7 +66,7 @@
                             <div class="tohoku region">
                         　      <h3 class="region-name">東北地方</h3>
                           　    <div class="tohoku-list">
-                            　　    <a href="#" class="tohoku-btn">宮城</a>
+                            　　    <a href="http://127.0.0.1:8000/community/page/1" class="tohoku-btn">宮城</a>
                                 </div>
                             </div>
                             <div class="kanto region">
