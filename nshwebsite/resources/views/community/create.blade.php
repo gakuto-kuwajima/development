@@ -42,7 +42,7 @@
                     <div class="form-group row">
                         <label class="col-md-2" for="information">コミュニティ情報</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="information" rows="10" placeholder="例）主に○○で活動しています。練習会は隔週○○日○○時からおこなっています。未経験の方も大歓迎です。">{{ old('information')}}</textarea>
+                            <textarea class="form-control" name="information" rows="10" placeholder="例）NEW STYLE HUSTLE TOKYOは、Zabu&Eriを中心にレッスンやパーティーなどを開催しております。">{{ old('information')}}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -91,7 +91,7 @@
                     <div class="form-group row">
                         <label class="col-md-2" for="message">メッセージ</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="message" rows="10" placeholder="例）NEW STYLE HUSTLE ○○です！だいたい平均5~10人くらい集まって練習会を開いています。もちろん県内外の方問わず参加可能なので、興味ある方はFacebookページをご覧になるか、お問い合わせ先にご連絡ください。">{{ old('message')}}</textarea>
+                            <textarea class="form-control" name="message" rows="10" placeholder="例）代表のZabu&Eriです。NEW STYLE HUSTLEに少しでも興味ある方はぜひご連絡ください！。">{{ old('message')}}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">

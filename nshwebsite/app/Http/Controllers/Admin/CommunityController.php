@@ -81,21 +81,23 @@ class CommunityController extends Controller
 
 
     public function index(Request $request)
-    {
-        $conditions =  ['name', 'pref','information'];
-        if ($conditions != '') {
-            $pages = Community::where(function ($query) use ($conditions) {
-              foreach ($conditions as $condition) {
-                  $query->where('condition', 'LIKE', "%{$condition}%");
-              }
-            })
-            ->get();
-
-        } else{
-            $pages = Community::all();
-        }
-        return view('community.index',['pages'=>$pages, 'conditions' =>$conditons]);
-    }
+       {
+           $keywords = $request->keywords;
+           if ($keywords != '') {
+               $keyary  = explode(" ",$keywords);
+               $pages = Community::where(function ($query) use ($keyary) {
+                   foreach ($keyary as $word) {
+                       $query->where('name', 'LIKE', "%{$word}%")
+                             ->orWhere('pref', 'LIKE', "%{$word}%")
+                             ->orWhere('information', 'LIKE', "%{$word}%");
+                   }
+               })
+               ->distinct()->select('id','name','information')->get();
+           } else {
+               $pages = Community::all();
+           }
+           return view('community.index',['pages'=>$pages, 'keywords' =>$keywords]);
+       }
 
 
     public function edit(Request $request)

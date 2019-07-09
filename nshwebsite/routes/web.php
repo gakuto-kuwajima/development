@@ -31,3 +31,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'CommunityController@toppage');
 
 Route::get('community/page/{id}', 'CommunityController@show');
+
+Route::get('search','SearchController@index');

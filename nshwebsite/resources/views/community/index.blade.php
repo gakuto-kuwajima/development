@@ -3,18 +3,18 @@
 
 @section('content')
     <div class="container">
-        <div class="row index-title">
+        <div class="row index-title col-md-12">
             <h2>作成コミュニティ一覧</h2>
         </div>
         <div class="row">
             <div class="col-md-4 create-new">
-                <a href="{{ action('Admin\CommunityController@add') }}" role="button" class="btn btn-primary">新規作成</a>
+                <a href="{{ action('Admin\CommunityController@add') }}" role="button" class="btn btn-success">新規作成</a>
             </div>
             <div class="col-md-8">
                 <form action="{{ action('Admin\CommunityController@index')}}" method="get">
                     <div class="form-group row">
-                        <div class="col-md-10 search-box">
-                            <input type="text" class="form-control" name="conditions" value={{ $conditions }}>
+                        <div class="col-md-9 search-box">
+                            <input type="text" class="form-control" name="keywords" value={{ $keywords }}>
                         </div>
                         <div class="col-md-2">
                             {{ csrf_field()}}
@@ -25,16 +25,15 @@
             </div>
         </div>
         <div class="row">
-            <div class="index-community col-md-12 mx-auto">
-                <div class="row">
+            <div class="index-community">
+                <div class="row col-md-12 mx-auto">
                     <table class="table table-dark">
                         <thead>
                             <tr>
                               <th width="5%">ID</th>
-                              <th width="15%">コミュニティ名</th>
-                              <th width="10%">都道府県</th>
+                              <th width="25%">コミュニティ名</th>
                               <th width="50%">コミュニティ情報</th>
-                              <th width="10%">操作</th>
+                              <th width="20%">操作</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -42,7 +41,6 @@
                                 <tr>
                                     <th>{{ $community->id }}</th>
                                     <td>{{ str_limit($community->name, 100) }}</td>
-                                    <td>{{ $community->pref }}</td>
                                     <td>{{ str_limit($community->information, 100) }}</td>
                                     <td>
                                         <div>

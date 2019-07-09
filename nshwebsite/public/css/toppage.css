@@ -1,64 +1,5 @@
 @charset "UTF-8";
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  color: #000;
-  font-size: 1.6rem;
-  /* 16px*/
-  line-height: 2;
-}
-
-h1 {
-  font-size: 36px;
-  /* IE8以下とAndroid4.3以下用フォールバック */
-  font-size: calc(2.4rem + ((1vw - 0.64rem) * 2.1429));
-  /* 24px~36pxで可変*/
-  line-height: 1.3;
-}
-
-h2 {
-  font-size: 24px;
-  /* IE8以下とAndroid4.3以下用フォールバック */
-  font-size: calc(2rem + ((1vw - 0.64rem) * 0.7143));
-  /* 20px~24pxで可変*/
-  line-height: 1.3;
-}
-
-@media (min-width: 1200px) {
-  /* 1200px以上*/
-
-  h1 {
-    font-size: 7rem;
-    /* 36px*/
-  }
-
-  h2 {
-    font-size: 3.8rem;
-    /* 24px*/
-  }
-}
-
-@media screen and (max-width: 640px) {
-  /* 640px以下*/
-
-  body {
-    line-height: 2;
-  }
-
-  h1 {
-    font-size: 2rem;
-    /* 24px*/
-  }
-
-  h2 {
-    font-size: 2.4rem;
-    /* 20px*/
-  }
-}
-
 .top-image {
   position: relative;
   width: 100%;
@@ -342,5 +283,68 @@ h3 {
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
   border-bottom: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #000;
+  font-size: 1.6rem;
+  /* 16px*/
+  line-height: 2;
+}
+
+h1 {
+  font-size: 36px;
+  /* IE8以下とAndroid4.3以下用フォールバック */
+  font-size: calc(2.4rem + ((1vw - 0.64rem) * 2.1429));
+  /* 24px~36pxで可変*/
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 24px;
+  /* IE8以下とAndroid4.3以下用フォールバック */
+  font-size: calc(2rem + ((1vw - 0.64rem) * 0.7143));
+  /* 20px~24pxで可変*/
+  line-height: 1.3;
+}
+
+@media (min-width: 1200px) {
+  /* 1200px以上*/
+
+  h1 {
+    font-size: 7rem;
+    /* 36px*/
+  }
+
+  h2 {
+    font-size: 3.8rem;
+    /* 24px*/
+  }
+}
+
+@media screen and (max-width: 640px) {
+  /* 640px以下*/
+
+  body {
+    line-height: 2;
+  }
+
+  h1 {
+    font-size: 2rem;
+    /* 24px*/
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    /* 20px*/
+  }
+
+  .section-text {
+    padding-top: 0.8rem;
+  }
 }
 
