@@ -65,15 +65,13 @@
             <div class="form-group row">
                 <div class="message col-md-12 mx-auto">
                     <h2>代表者メッセージ</h2>
-                    <div class="balloon">
+                    <div class="balloon1">
                         @if (!is_null($page->message_image_path))
-                            <figure class="balloon-image-left">
-                                <img src="{{ asset('storage/image/' . $page->message_image_path) }}" class="img-fluid  ">
-                            </figure>
+                            <div class="icon"><img src="{{ asset('storage/image/' . $page->message_image_path) }}" class="img-fluid  "></div>
                         @endif
-                            <div class="balloon-text-right">
-                                <p>{!! nl2br(e($page->message)) !!}</p>
-                            </div>
+                        <div class="balloon-text-right">
+                            <p>{!! nl2br(e($page->message)) !!}</p>
+                        </div>
                     </div>
                 </div>
             </div>
