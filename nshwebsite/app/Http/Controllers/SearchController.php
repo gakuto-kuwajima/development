@@ -21,7 +21,8 @@ class SearchController extends Controller
                              ->orWhere('information', 'LIKE', "%{$word}%");
                    }
                })
-               ->distinct()->select('eyecatch_path','name','information')->orderBy('updated_at', 'desc')->get();
+               //->distinct()->select('eyecatch_path','name','information')->orderBy('updated_at', 'desc')->get();
+               ->distinct()->orderBy('updated_at', 'desc')->get();
            } else {
                $posts = Community::all()->sortByDesc('updated_at');
            }

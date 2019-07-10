@@ -1,4 +1,4 @@
-extends('layouts.front')
+@extends('layouts.front')
 
 @section('content')
     <div class="container">
@@ -36,6 +36,6 @@ extends('layouts.front')
                     <hr color="#c0c0c0">
                     @endforeach
                 </div>
-            </div>            
+            </div>
       </div>
 @endsection

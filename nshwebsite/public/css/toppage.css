@@ -1,5 +1,68 @@
 @charset "UTF-8";
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #000;
+  font-size: 1.6rem;
+  /* 16px*/
+  line-height: 2;
+}
+
+h1 {
+  font-size: 36px;
+  /* IE8以下とAndroid4.3以下用フォールバック */
+  font-size: calc(2.4rem + ((1vw - 0.64rem) * 2.1429));
+  /* 24px~36pxで可変*/
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 24px;
+  /* IE8以下とAndroid4.3以下用フォールバック */
+  font-size: calc(2rem + ((1vw - 0.64rem) * 0.7143));
+  /* 20px~24pxで可変*/
+  line-height: 1.3;
+}
+
+@media (min-width: 1200px) {
+  /* 1200px以上*/
+
+  h1 {
+    font-size: 7rem;
+    /* 36px*/
+  }
+
+  h2 {
+    font-size: 3.8rem;
+    /* 24px*/
+  }
+}
+
+@media screen and (max-width: 640px) {
+  /* 640px以下*/
+
+  body {
+    line-height: 2;
+  }
+
+  h1 {
+    font-size: 2rem;
+    /* 24px*/
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    /* 20px*/
+  }
+
+  .section-text {
+    padding-top: 0.8rem;
+  }
+}
+
 .top-image {
   position: relative;
   width: 100%;
@@ -65,7 +128,7 @@ h2 {
 }
 
 h2:before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -15px;
   display: inline-block;
@@ -94,11 +157,11 @@ h2:before {
   position: relative;
   display: inline-block;
   font-weight: bold;
-  padding: 0.3em 1em;
+  padding: 0.3em 1.0em;
   text-decoration: none;
   color: #00BCD4;
   background: #ECECEC;
-  transition: 0.4s;
+  transition: .4s;
   vertical-align: middle;
 }
 
@@ -125,7 +188,7 @@ h2:before {
 }
 
 h3 {
-  padding: 0.5em 0.75em;
+  padding: .5em .75em;
   background-color: #f6f6f6;
   border-bottom: 1px solid #ccc;
 }
@@ -162,7 +225,7 @@ h3 {
 .kanto-btn {
   display: inline-block;
   max-width: 180px;
-  text-align: left;
+  text-align: center;
   background-color: #90ba1e;
   font-size: 20px;
   color: #FFF;
@@ -172,9 +235,32 @@ h3 {
   border-radius: 4px;
   border-bottom: 4px solid #757575;
   margin-bottom: 7px;
+  vertical-align: top;
 }
 
 .kanto-btn:active {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  border-bottom: none;
+}
+
+.kanto-btn-tokyo {
+  display: inline-block;
+  max-width: 180px;
+  text-align: center;
+  background-color: #90ba1e;
+  font-size: 20px;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 4px;
+  border-bottom: 4px solid #757575;
+  margin-bottom: 7px;
+  line-height: 1;
+}
+
+.kanto-btn-tokyo:active {
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
   border-bottom: none;
@@ -285,66 +371,8 @@ h3 {
   border-bottom: none;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  color: #000;
-  font-size: 1.6rem;
-  /* 16px*/
-  line-height: 2;
-}
-
-h1 {
-  font-size: 36px;
-  /* IE8以下とAndroid4.3以下用フォールバック */
-  font-size: calc(2.4rem + ((1vw - 0.64rem) * 2.1429));
-  /* 24px~36pxで可変*/
-  line-height: 1.3;
-}
-
-h2 {
-  font-size: 24px;
-  /* IE8以下とAndroid4.3以下用フォールバック */
-  font-size: calc(2rem + ((1vw - 0.64rem) * 0.7143));
-  /* 20px~24pxで可変*/
-  line-height: 1.3;
-}
-
-@media (min-width: 1200px) {
-  /* 1200px以上*/
-
-  h1 {
-    font-size: 7rem;
-    /* 36px*/
-  }
-
-  h2 {
-    font-size: 3.8rem;
-    /* 24px*/
-  }
-}
-
-@media screen and (max-width: 640px) {
-  /* 640px以下*/
-
-  body {
-    line-height: 2;
-  }
-
-  h1 {
-    font-size: 2rem;
-    /* 24px*/
-  }
-
-  h2 {
-    font-size: 2.8rem;
-    /* 20px*/
-  }
-
-  .section-text {
-    padding-top: 0.8rem;
-  }
+.pref-btn2 {
+  font-size: 15px;
+  text-align: left;
 }
 

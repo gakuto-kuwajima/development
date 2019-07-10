@@ -12,11 +12,13 @@ class CommunityController extends Controller
     public function show(Request $request)
     {
         $page = Community::find($request->id);
-        return view('community.show',['page' =>$page]);
+        $keywords = '';
+        return view('community.show',['page' =>$page,'keywords'=>$keywords]);
     }
 
     public function toppage()
     {
-        return view('toppage');
+        $keywords = '';
+        return view('toppage',['keywords'=>$keywords]);
     }
 }

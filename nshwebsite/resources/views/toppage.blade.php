@@ -72,7 +72,8 @@
                             <div class="kanto region">
                                 <h3 class="region-name">関東地方</h3>
                                 <div class="kanto-list">
-                                    <a href="#" class="kanto-btn">東京</a>
+                                    <a href="#" class="kanto-btn-tokyo"><span class="pref-btn1">TYO</span><br><span class="pref-btn2">(東京)</span></a>
+                                    <a href="#" class="kanto-btn-tokyo"><span class="pref-btn1">Zabu&Eri<br></span><span class="pref-btn2">(東京)</span></a>
                                     <a href="#" class="kanto-btn">千葉</a>
                                     <a href="#" class="kanto-btn">埼玉</a>
                                     <a href="#" class="kanto-btn">栃木</a>
