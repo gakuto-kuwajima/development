@@ -30,7 +30,7 @@ h2 {
     line-height: 2;
     }
     h1{
-        font-size: 2.6rem;/* 24px*/
+        font-size: 2.8rem;/* 24px*/
     }
     h2 {
         font-size: 2.4rem;/* 20px*/
@@ -141,7 +141,7 @@ h2 {
 
 
 .community_name{
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .message{
@@ -263,30 +263,4 @@ h2 {
 
 .page-return{
   text-align:center;
-}
-
-
-
-
-
-//検索結果のcss
-.posts {
-  .post {
-    .date {
-      font-size: 0.6em;
-      color: #999999;
-    }
-    .title {
-      font-size: 1.2em;
-      font-weight: bold;
-    }
-    .body {
-      font-size: 0.8em;
-    }
-    .image {
-      img {
-    width: 250px;
-      }
-    }
-  }
 }

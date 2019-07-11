@@ -7,6 +7,12 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+#app{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .container {
   max-width: 1170px;
   width: 100%;
@@ -39,6 +45,11 @@
 
 
 //footer
+
+footer{
+margin-top: auto;
+}
+
 
 /* ボタン全体 */
 .flowbtn10{
